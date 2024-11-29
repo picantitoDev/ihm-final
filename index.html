@@ -54,7 +54,7 @@
                 <div class="navbar-icons ms-auto">
                     <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
                     <a href="login.html" class="nav-icon"><i class="fas fa-user"></i></a>
-                    <a href="tienda.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
@@ -84,7 +84,7 @@
             <h1>Impulsando tu <br>belleza, al <span class="highlight">natural</span></h1>
             <p>Los mejores productos de maquillaje en Trujillo, con ingredientes 100% naturales</p>
             <div class="hero-buttons">
-                <button class="btn-primary">Comprar ahora</button>
+                <a href="tienda.html" class="btn-primary">Comprar ahora</a>
                 <button class="btn-demo">
                     <i class="fas fa-play"></i> Ver Demo
                 </button>
@@ -225,7 +225,7 @@
             <form class="newsletter-form">
                 <div class="input-container">
                     <i class="fas fa-envelope input-icon"></i>
-                    <input type="email" placeholder="Your email" class="newsletter-input">
+                    <input type="email" placeholder="Tu correo" class="newsletter-input">
                 </div>
                 <button type="submit" class="newsletter-button">Suscribirse</button>
             </form>
@@ -240,7 +240,7 @@
                     <h4>Árnica</h4>
                     <p>Productos Naturales <br> para el cuidado diario <br> de la piel</p>
                 </div>
-    
+
                 <!-- Nosotros Section -->
                 <div class="col-md-2 footer-links">
                     <h5>Nosotros</h5>
@@ -250,7 +250,7 @@
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Ayuda Section -->
                 <div class="col-md-2 footer-links">
                     <h5>Ayuda</h5>
@@ -259,16 +259,16 @@
                         <li><a href="#">Privacidad</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Contact Section -->
-                <div class="col-md-3.3 footer-contact">
+                <div class="col-md-3 footer-contact">
                     <h5>Contacto</h5>
                     <ul>
                         <li><i class="fa fa-phone"></i> +51 953 889 070</li>
                         <li><i class="fa fa-envelope"></i> arnicabeauty@outlook.com</li>
                     </ul>
                 </div>
-    
+
                 <!-- Social Media Links -->
                 <div class="col-md-2 footer-social">
                     <h5>Redes Sociales</h5>
@@ -305,6 +305,9 @@
             loop: true,
             margin: 10,
             nav: true,
+            autoplay: true, 
+            autoplayTimeout: 2500, 
+            autoplayHoverPause: true, 
             responsive: {
                 0: {
                     items: 1
@@ -318,37 +321,37 @@
             }
         })
     </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.querySelector(".navbar-toggler");
-        const offcanvasMenu = document.querySelector("#offcanvasMenu");
-        const closeButton = document.querySelector(".btn-close");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.querySelector(".navbar-toggler");
+            const offcanvasMenu = document.querySelector("#offcanvasMenu");
+            const closeButton = document.querySelector(".btn-close");
 
-        // Abre el menú al hacer clic en el botón de hamburguesa
-        menuButton.addEventListener("click", function () {
-            offcanvasMenu.classList.add("active");
-        });
+            // Abre el menú al hacer clic en el botón de hamburguesa
+            menuButton.addEventListener("click", function () {
+                offcanvasMenu.classList.add("active");
+            });
 
-        // Cierra el menú al hacer clic en la "X"
-        closeButton.addEventListener("click", function () {
-            offcanvasMenu.classList.remove("active");
-        });
-
-        // Cierra el menú al hacer clic en cualquier enlace
-        document.querySelectorAll(".menu-list a").forEach(link => {
-            link.addEventListener("click", function () {
+            // Cierra el menú al hacer clic en la "X"
+            closeButton.addEventListener("click", function () {
                 offcanvasMenu.classList.remove("active");
             });
-        });
 
-        // Opcional: Cierra el menú si se hace clic fuera de él
-        document.addEventListener("click", function (event) {
-            if (!offcanvasMenu.contains(event.target) && !menuButton.contains(event.target)) {
-                offcanvasMenu.classList.remove("active");
-            }
+            // Cierra el menú al hacer clic en cualquier enlace
+            document.querySelectorAll(".menu-list a").forEach(link => {
+                link.addEventListener("click", function () {
+                    offcanvasMenu.classList.remove("active");
+                });
+            });
+
+            // Opcional: Cierra el menú si se hace clic fuera de él
+            document.addEventListener("click", function (event) {
+                if (!offcanvasMenu.contains(event.target) && !menuButton.contains(event.target)) {
+                    offcanvasMenu.classList.remove("active");
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
