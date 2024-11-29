@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Laila:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Árnica | Cosméticos Naturales</title>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/logo.png" alt="Logo AB" class="logo-img">
+                </a>
+
+                <!-- Menu Section -->
+                <div class="d-flex align-items-center menu-section">
+                    <button class="navbar-toggler border-0 d-flex align-items-center" type="button"
+                        data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars me-2"></i>
+                        <span class="menu-text">Menú</span>
+                    </button>
+                </div>
+
+                <!-- Search Bar -->
+                <form class="d-flex mx-auto search-bar">
+                    <input class="form-control rounded-pill" type="search" placeholder="Buscar productos"
+                        aria-label="Buscar">
+                    <button class="btn btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <!-- Icons -->
+                <div class="navbar-icons ms-auto">
+                    <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                    <a href="login.html" class="nav-icon"><i class="fas fa-user"></i></a>
+                    <a href="tienda.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas-menu" id="offcanvasMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menú</h5>
+                <button type="button" class="btn-close" data-dismiss="offcanvas" aria-label="Close">&times;</button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="menu-list">
+                    <li><a href="#section1">Inicio</a></li>
+                    <li><a href="#section2">Productos</a></li>
+                    <li><a href="#section3">Acerca de</a></li>
+                    <li><a href="#section4">Promociones</a></li>
+                    <li><a href="#section5">Servicios</a></li>
+                    <li><a href="#section6">Testimonios</a></li>
+                    <li><a href="#section7">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="container hero-container">
+        <div class="text-section">
+            <h1>Impulsando tu <br>belleza, al <span class="highlight">natural</span></h1>
+            <p>Los mejores productos de maquillaje en Trujillo, con ingredientes 100% naturales</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Comprar ahora</button>
+                <button class="btn-demo">
+                    <i class="fas fa-play"></i> Ver Demo
+                </button>
+            </div>
+            <div class="social-proof">
+                <div class="avatars">
+                    <img src="img/avatar1.png" class="avatar" alt="User 1">
+                    <img src="img/avatar2.png" class="avatar" alt="User 2">
+                    <img src="img/avatar3.png" class="avatar" alt="User 3">
+                    <span class="more-avatars">+99</span>
+                </div>
+                <span class="social-text">+5,000 personas como tú <br>están comprando en Árnica</span>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="img/modelo.png" alt="Modelo" class="hero-image">
+        </div>
+    </section>
+
+    <div class="container text-center my-4">
+        <h2 class="section-title">PRODUCTOS DESTACADOS</h2>
+    </div>
+
+    <div class="container owl-carousel owl-theme">
+        <div class="item">
+            <div class="product-card">
+                <div class="product-card-header">
+                    <img src="img/producto1.png" class="img-fluid" alt="ATHENA SERUM DE VITAMINA C">
+                    <span class="favorite-icon">❤️</span>
+                </div>
+                <div class="product-card-body">
+                    <h5 class="product-title">ATHENA SERUM 30ML</h5>
+                    <p class="product-price">S/. 126.00</p>
+                    <div class="product-rating">
+                        <span>★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="product-card">
+                <div class="product-card-header">
+                    <img src="img/producto2.png" class="img-fluid" alt="ATHENA BLUSH">
+                    <span class="favorite-icon">❤️</span>
+                </div>
+                <div class="product-card-body">
+                    <h5 class="product-title">ATHENA BLUSH 30ML</h5>
+                    <p class="product-price">S/. 126.00</p>
+                    <div class="product-rating">
+                        <span>★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="product-card">
+                <div class="product-card-header">
+                    <img src="img/producto3.png" class="img-fluid" alt="ATHENA BLUSH">
+                    <span class="favorite-icon">❤️</span>
+                </div>
+                <div class="product-card-body">
+                    <h5 class="product-title">ATHENA BLUSH 30ML</h5>
+                    <p class="product-price">S/. 126.00</p>
+                    <div class="product-rating">
+                        <span>★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Promo Section -->
+    <section id="promo">
+        <div class="container promo-section">
+            <div class="promo-content">
+                <span class="promo-tagline">Skincare</span>
+                <h1 class="promo-title">40% de <br> Descuento</h1>
+                <p class="promo-subtitle">En bases y correctores</p>
+                <a href="#" class="promo-button">Ver en tienda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="container about-us-section">
+        <div class="about-us-content">
+            <h1 class="about-us-title">
+                Somos la primera <br>marca de maquillaje <br>
+                <em class="kite-one">natural</em> en la ciudad <br> de Trujillo
+            </h1>
+            <a href="#" class="about-us-button">Conocer más</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container testimonials-section">
+        <h2 class="testimonials-title">Lo que nuestros clientes dicen...</h2>
+        <div class="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img src="img/quote-icon.png" alt="Comillas" class="quote-icon">
+                <p class="testimonial-text">"El mejor maquillaje que he probado, mi piel luce radiante y los
+                    ingredientes naturales me dan confianza para usarlo todos los días."</p>
+                <img src="img/person1.png" alt="María P." class="testimonial-photo">
+                <h4 class="testimonial-name">María P.</h4>
+                <p class="testimonial-occupation">Abogada</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img src="img/quote-icon.png" alt="Comillas" class="quote-icon">
+                <p class="testimonial-text">"Me encanta saber que mi maquillaje no solo es hermoso, sino también
+                    respetuoso con el medio ambiente."</p>
+                <img src="img/person2.png" alt="Ana G." class="testimonial-photo">
+                <h4 class="testimonial-name">Ana G.</h4>
+                <p class="testimonial-occupation">Médico</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <img src="img/quote-icon.png" alt="Comillas" class="quote-icon">
+                <p class="testimonial-text">"Finalmente encontré un maquillaje que no irrita mi piel sensible. Además,
+                    el acabado es increíblemente natural."</p>
+                <img src="img/person3.png" alt="Carolina S." class="testimonial-photo">
+                <h4 class="testimonial-name">Carolina S.</h4>
+                <p class="testimonial-occupation">Ingeniera</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="container newsletter-section">
+        <div class="newsletter-content">
+            <h2 class="newsletter-title">¡Suscríbete a nuestro boletín y estate <br> atento a nuestros próximos
+                descuentos!</h2>
+            <form class="newsletter-form">
+                <div class="input-container">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" placeholder="Your email" class="newsletter-input">
+                </div>
+                <button type="submit" class="newsletter-button">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <!-- Brand and Description -->
+                <div class="col-md-3 footer-brand">
+                    <h4>Árnica</h4>
+                    <p>Productos Naturales <br> para el cuidado diario <br> de la piel</p>
+                </div>
+    
+                <!-- Nosotros Section -->
+                <div class="col-md-2 footer-links">
+                    <h5>Nosotros</h5>
+                    <ul>
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li><a href="#">Nuestro Equipo</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Ayuda Section -->
+                <div class="col-md-2 footer-links">
+                    <h5>Ayuda</h5>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="col-md-3.3 footer-contact">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-phone"></i> +51 953 889 070</li>
+                        <li><i class="fa fa-envelope"></i> arnicabeauty@outlook.com</li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="col-md-2 footer-social">
+                    <h5>Redes Sociales</h5>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p class="footer-bottom">&copy; 2024 Árnica Beauty</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".navbar-toggler");
+        const offcanvasMenu = document.querySelector("#offcanvasMenu");
+        const closeButton = document.querySelector(".btn-close");
+
+        // Abre el menú al hacer clic en el botón de hamburguesa
+        menuButton.addEventListener("click", function () {
+            offcanvasMenu.classList.add("active");
+        });
+
+        // Cierra el menú al hacer clic en la "X"
+        closeButton.addEventListener("click", function () {
+            offcanvasMenu.classList.remove("active");
+        });
+
+        // Cierra el menú al hacer clic en cualquier enlace
+        document.querySelectorAll(".menu-list a").forEach(link => {
+            link.addEventListener("click", function () {
+                offcanvasMenu.classList.remove("active");
+            });
+        });
+
+        // Opcional: Cierra el menú si se hace clic fuera de él
+        document.addEventListener("click", function (event) {
+            if (!offcanvasMenu.contains(event.target) && !menuButton.contains(event.target)) {
+                offcanvasMenu.classList.remove("active");
+            }
+        });
+    });
+</script>
+</body>
+
+</html>
